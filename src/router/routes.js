@@ -1,4 +1,5 @@
-
+import Login from 'pages/Login'
+import Cadastrar from 'pages/Cadastrar'
 const routes = [
   {
     path: '/',
@@ -7,7 +8,14 @@ const routes = [
       { path: '', component: () => import('pages/Index.vue') }
     ]
   },
-
+  {
+    path: '/Cadastrar',
+    component: Cadastrar
+  },
+  {
+    path: '/login',
+    component: Login
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
